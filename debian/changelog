@@ -1,3 +1,13 @@
+znapzend (0.23.2-1) UNRELEASED; urgency=medium
+
+  * New upstream release (0.23.2)
+  * Changed from docker to podman for building
+  * Updated package maintainer
+  * Fixed debhelper compat level conflict
+  * Modernized debian packaging standards
+
+ -- Karl Dag Gursli <karl-d@gursli.com>  Thu, 05 Dec 2025 06:57:00 +0000
+
 znapzend (0.21.1-1) UNRELEASED; urgency=medium
 
   * Experimental package

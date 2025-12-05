@@ -1,9 +1,9 @@
 Source: znapzend
-Maintainer: Petr Gregor <gregy@gregy.cz>
+Maintainer: Karl Dag Gursli <karl-d@gursli.com>
 Section: misc
 Priority: optional
 Standards-Version: 4.5.1
-Build-Depends: debhelper (>= 9.20160709), debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 13)
 
 Package: znapzend
 Architecture: any

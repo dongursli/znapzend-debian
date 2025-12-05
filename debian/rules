@@ -1,8 +1,21 @@
 #!/usr/bin/make -f
-%:
-	dh $@ --with autoreconf --no-parallel
+export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+export DH_ALWAYS_EXCLUDE=CVS:.svn:.git:
+
+override_dh_auto_configure:
+	./bootstrap.sh
+	./configure --enable-deb_build
 
 override_dh_installinit:
 	echo 'not installing init script, relying on systemd'
+
 override_dh_auto_test:
-	echo ' skip tests'
+	echo 'skip tests'
+
+%:
+	dh $@
+
